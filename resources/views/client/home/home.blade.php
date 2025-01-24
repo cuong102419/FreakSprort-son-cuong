@@ -85,7 +85,7 @@ Freak Sport
                 <div class="product-item">
                     <div class="inner-content">
                         <div class="product-thumb">
-                            <a href="single-product.html">
+                            <a href="{{ route('product.index') }}">
                                 <img src="{{ asset('client/img/shop/1.webp')}}" width="270" height="274"
                                     alt="Image-HasTech">
                             </a>
@@ -114,7 +114,7 @@ Freak Sport
                                     <li><a href="shop.html">Women</a></li>
                                 </ul>
                             </div>
-                            <h4 class="title"><a href="single-product.html">Leather Mens Slipper</a></h4>
+                            <h4 class="title"><a href="{{ route('product.index') }}">Leather Mens Slipper</a></h4>
                             <div class="prices">
                                 <span class="price-old">$100</span>
                                 <span class="sep">-</span>
