@@ -18,7 +18,10 @@ return new class extends Migration
             $table->enum('status', ['pending', 'processing', 'completed', 'cancelled'])->default('pending');
             $table->double('total_amount');
             $table->string('payment_method');
-            $table->string('shipping_address');
+            $table->string('address');
+            $table->string('fullname');
+            $table->string('email');
+            $table->string('phone_number');
             $table->text('note')->nullable();
             $table->timestamps();
         });

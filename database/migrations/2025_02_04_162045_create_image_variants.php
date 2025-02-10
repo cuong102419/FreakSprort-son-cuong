@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('image_variants', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_variants_id')->constrained();
+            $table->string('image_url');
+            $table->softDeletes();
             $table->timestamps();
             
         });

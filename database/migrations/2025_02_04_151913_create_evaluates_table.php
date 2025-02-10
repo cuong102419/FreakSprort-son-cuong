@@ -18,7 +18,7 @@ return new class extends Migration
 
             $table->text('content');
             $table->integer('rating');
-            $table->softDeletes();
+            $table->boolean('status')->default(1);
 
             $table->timestamps();
         });
