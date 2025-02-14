@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('product_id')->constrained();
             $table->foreignId('color_id')->constrained();
             $table->foreignId('size_id')->constrained();
-
+ 
             $table->double('price');
             $table->integer('quantity');
             $table->integer('sales_count')->default(0);

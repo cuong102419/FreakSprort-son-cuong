@@ -19,7 +19,7 @@ return new class extends Migration
             $table->double('total_amount');
             $table->string('payment_method');
             $table->string('address');
-            $table->string('fullname');
+            $table->string('fullname'); 
             $table->string('email');
             $table->string('phone_number');
             $table->text('note')->nullable();
